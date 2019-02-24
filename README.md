@@ -5,9 +5,13 @@ lazypic에서 자주 사용하는 AWS 명령어 문서 모음집 입니다.
 - [s3](docs/s3.md)
 - [sns](docs/sns.md)
 
-## Need
+## Install
 awscli를 설치해야 합니다.
-```
+
+```bash
+$ cd /tmp
+$ curl -O https://bootstrap.pypa.io/get-pip.py
+$ python3 get-pip.py
 $ pip3 install awscli
 ```
 
