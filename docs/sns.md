@@ -28,3 +28,7 @@ $ aws sns subscribe --topic-arn arn:aws:sns:ap-northeast-2:000000000000:news --p
 ```bash
 $ aws sns publish --topic-arn arn:aws:sns:ap-northeast-2:000000000000:news --message "test"
 ```
+
+- 프로젝트명으로 topic을 만들 수 있습니다.
+- 팀명으로 topic을 만들 수 있습니다.
+- 동호회명으로 topic을 만들 수 있습니다.
