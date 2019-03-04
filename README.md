@@ -5,6 +5,8 @@ lazypic에서 자주 사용하는 AWS 명령어 문서 모음집 입니다.
 - [s3](docs/s3.md)
 - [sns](docs/sns.md)
 - [IAM](docs/iam.md)
+- [AWS Certificate Manager](docs/acm.md)
+- [CloudFront](docs/cloudfront.md)
 
 ## Install
 awscli를 설치해야 합니다.
