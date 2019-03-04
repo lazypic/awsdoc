@@ -4,6 +4,7 @@ lazypic에서 자주 사용하는 AWS 명령어 문서 모음집 입니다.
 
 - [s3](docs/s3.md)
 - [sns](docs/sns.md)
+- [IAM](docs/iam.md)
 
 ## Install
 awscli를 설치해야 합니다.
