@@ -13,6 +13,7 @@ lazypic에서 자주 사용하는 AWS 명령어 문서 모음집 입니다.
 - [APIGatway](doc/apigatway.md)
 - [Lambda](doc/lambda.md)
 - [DynamoDB](doc/dynamodb.md)
+- [DocumentDB](doc/documentdb.md)
 
 ## Lang
 - [Node.js](doc/nodejs.md)
