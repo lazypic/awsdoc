@@ -18,5 +18,8 @@
 - Put & Patch : https://stackoverflow.com/questions/24241893/rest-api-patch-or-put
 - [코그니토](cognito.md) + APIGatway : https://www.youtube.com/watch?v=5dbgJdcMfiU
 
+## lambda에서 application/html 리턴하기
+- Reference : https://kennbrodhagen.net/2016/01/31/how-to-return-html-from-aws-api-gateway-lambda/
+
 ## 도메인 연결 / Custom Domain Names
 Route53에 레코드를 생성하고 estimate.lazypic.org 형태로 도메인을 입력한다. 40분정도 소요됨. 많이 요청하기 때문에 여러번 해볼 필요가 있다.

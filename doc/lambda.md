@@ -18,6 +18,19 @@ def handler_name(event, context):
     return event
 ```
 
+## DynamoDB 연동
+리서치
+#### Create
+#### Read
+#### Update
+#### Delete
+
+## S3 데이터 업로드
+리서치
+
+## S3 데이터 다운로드
+리서치
+
 ## Reference
 - https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/python-programming-model-handler-types.html
 - https://m.youtube.com/watch?v=g7AHiymJ7I4
