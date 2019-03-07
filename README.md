@@ -14,6 +14,7 @@ lazypic에서 자주 사용하는 AWS 명령어 문서 모음집 입니다.
 - [Lambda](docs/lambda.md)
 - [DynamoDB](docs/dynamodb.md)
 - [DocumentDB](docs/documentdb.md)
+- [Glacier](docs/glacier.md)
 
 ## Lang
 - [Node.js](docs/nodejs.md)
