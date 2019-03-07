@@ -8,15 +8,15 @@ lazypic에서 자주 사용하는 AWS 명령어 문서 모음집 입니다.
 - [IAM](docs/iam.md)
 - [Certificate Manager](docs/acm.md)
 - [CloudFront](docs/cloudfront.md)
-- [Cognito](doc/cognito.md)
-- [Route53](doc/route53.md)
-- [APIGatway](doc/apigatway.md)
-- [Lambda](doc/lambda.md)
-- [DynamoDB](doc/dynamodb.md)
-- [DocumentDB](doc/documentdb.md)
+- [Cognito](docs/cognito.md)
+- [Route53](docs/route53.md)
+- [APIGatway](docs/apigatway.md)
+- [Lambda](docs/lambda.md)
+- [DynamoDB](docs/dynamodb.md)
+- [DocumentDB](docs/documentdb.md)
 
 ## Lang
-- [Node.js](doc/nodejs.md)
+- [Node.js](docs/nodejs.md)
 
 ## Install
 awscli를 설치해야 합니다.
