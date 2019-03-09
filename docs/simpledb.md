@@ -128,7 +128,15 @@ select * from `cashflow` where cost > '0000100000'
 tags Attribute값에 `donation` 이라는 문자가 있는 데이터만 검색
 ```
 select * from `cashflow` where tags like '%donation%'
+select * from `cashflow` where tags like '%셋팅%'
 ```
+
+정렬하기(방법 찾아보기)
+```
+select * from `cashflow` where tags like '%donation%' order by date
+```
+
+
 
 - 쿼리예제 : https://docs.aws.amazon.com/ko_kr/AmazonSimpleDB/latest/DeveloperGuide/SimpleQueriesSelect.html
 
