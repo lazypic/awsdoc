@@ -48,6 +48,11 @@ IAM에서 수동으로 정책을 생성해줍니다.
 $ aws sdb create-domain --domain-name lazypic_test --region ap-northeast-1
 ```
 
+~/.aws/credentials 프로파일명을 따로 선언했다면 아래 옵션을 추가합니다.
+```
+$ aws sdb create-domain --domain-name lazypic_test --region ap-northeast-1 --profile lazypic
+```
+
 ## 도메인생성
 ```bash
 $ aws sdb create-domain --region ap-northeast-1 --domain-name lazypic_client
