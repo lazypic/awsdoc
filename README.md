@@ -12,6 +12,7 @@ lazypic에서 자주 사용하는 AWS 명령어 문서 모음집 입니다.
 - [Route53](docs/route53.md)
 - [APIGatway](docs/apigatway.md)
 - [Lambda](docs/lambda.md)
+- [SimpleDB](docs/simpledb.md)
 - [DynamoDB](docs/dynamodb.md)
 - [DocumentDB](docs/documentdb.md)
 - [Glacier](docs/glacier.md)
