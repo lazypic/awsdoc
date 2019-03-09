@@ -1,7 +1,7 @@
 # Cognito
 
 ## SignUp
-https://lazypic.auth.ap-northeast-2.amazoncognito.com?response_type=token&client_id=4q2hukd8jle8bj8uoaihb52och&redirect_uri=https://lazypic.org
+https://lazypic.auth.ap-northeast-2.amazoncognito.com/signup?response_type=token&client_id=4q2hukd8jle8bj8uoaihb52och&redirect_uri=https://lazypic.org
 
 ## SignIn
 https://lazypic.auth.ap-northeast-2.amazoncognito.com/login?response_type=token&client_id=4q2hukd8jle8bj8uoaihb52och&redirect_uri=https://lazypic.org
