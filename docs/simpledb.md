@@ -104,10 +104,27 @@ $ aws sdb delete-domain --region ap-northeast-1 --domain-name lazypic_client
 ```
 
 ## 쿼리
-모든 데이터 가지고오기
+cashflow 에 들어간 데이터를 가지고 오기
+
+```bash
+$ aws sdb select --region ap-northeast-1 --select-expression 'select * from `cashflow`'
 ```
-$ aws sdb select --region ap-northeast-1 --select-expression 'select * from `lazypic_client`'
+
+100개만 추리기
 ```
+select * from `cashflow` limit 100
+```
+
+name attribute의 값이 "김한웅"으로 설정되어있는 데이터 쿼리하기
+```
+select * from `cashflow` where name="김한웅"
+```
+
+cost Attribute의 값이 100000 보다 큰 값만 뽑기
+```
+select * from `cashflow` where cost > '100000'
+```
+
 - 쿼리예제 : https://docs.aws.amazon.com/ko_kr/AmazonSimpleDB/latest/DeveloperGuide/SimpleQueriesSelect.html
 
 ## 테스트 프로그램
