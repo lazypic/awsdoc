@@ -120,9 +120,14 @@ name attribute의 값이 "김한웅"으로 설정되어있는 데이터 쿼리�
 select * from `cashflow` where name="김한웅"
 ```
 
-cost Attribute의 값이 100000 보다 큰 값만 뽑기
+cost Attribute의 값이 100000 보다 큰 값만 뽑기. 숫자의 경우 자릿수가 맞아야 한다.
 ```
-select * from `cashflow` where cost > '100000'
+select * from `cashflow` where cost > '0000100000'
+```
+
+tags Attribute값에 `donation` 이라는 문자가 있는 데이터만 검색
+```
+select * from `cashflow` where tags like '%donation%'
 ```
 
 - 쿼리예제 : https://docs.aws.amazon.com/ko_kr/AmazonSimpleDB/latest/DeveloperGuide/SimpleQueriesSelect.html
