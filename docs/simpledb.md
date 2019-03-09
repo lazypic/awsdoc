@@ -8,13 +8,15 @@
 - 숫자는 제로패딩으로 저장한다.
 
 ## cli에서 sdb 옵션을 활성화
+aws cli에는 기본적으로 simpleDB가 활성화 되어있지 않습니다.
+터미널에서 다음처럼 입력하여 활성화 합니다.
+
 ```bash
 $ aws configure set preview.sdb true
 ```
 
 ## 지원리전
-아직 서울을 지원하지 않는다.
-명령어를 날릴 때 도쿄리전을 사용한다.
+아직 서울을 지원하지 않는다. 명령어를 날릴 때 도쿄리전을 사용합니다.
 
 ```bash
 $ aws sdb create-domain --domain-name test --region ap-northeast-1
