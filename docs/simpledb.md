@@ -27,6 +27,7 @@ $ aws sdb create-domain --domain-name test --region ap-northeast-1
 - 도쿄리전 : ap-northeast-1
 
 ## 정책생성
+IAM에서 수동으로 정책을 생성해줍니다.
 
 ```
 {
@@ -40,7 +41,7 @@ $ aws sdb create-domain --domain-name test --region ap-northeast-1
 }
 ```
 
-> 참고 : 맨 뒤 `domain/*` 형태가 되어야 list-domains 명령어가 작동된다. 고객, 사용자 제한을 할 때만 정확하게 도메인 이름을 작성해준다.
+> 참고 : 맨 뒤 `domain/*` 형태가 되어야 list-domains 명령어가 작동됩니다. 고객, 사용자 제한을 할 때만 정확하게 도메인 이름을 작성해줍니다.
 
 ## 테스트
 ```bash
