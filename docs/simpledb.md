@@ -132,14 +132,31 @@ select * from `cashflow` where tags like '%셋팅%'
 ```
 
 정렬하기(방법 찾아보기)
+
+일반정렬(ascending)
 ```
-select * from `cashflow` where tags like '%donation%' order by date
+select * from `cashflow` where tags like '%donation%' intersection cost is not null order by cost asc
+```
+
+반대정렬
+```
+select * from `cashflow` where tags like '%donation%' intersection cost is not null order by cost desc
+```
+
+itemName에 0000001* 형태의 아이템 추출
+```
+select * from `cashflow` where itemName() like '0000001%' order by itemName()
 ```
 
 
 
-- 쿼리예제 : https://docs.aws.amazon.com/ko_kr/AmazonSimpleDB/latest/DeveloperGuide/SimpleQueriesSelect.html
+- 쿼리예제1 : https://docs.aws.amazon.com/ko_kr/AmazonSimpleDB/latest/DeveloperGuide/SimpleQueriesSelect.html
+- 쿼리예제2 : https://docs.aws.amazon.com/ko_kr/AmazonSimpleDB/latest/DeveloperGuide/SDB_API_Select.html
+
+## SDK
+- Go : https://docs.aws.amazon.com/sdk-for-go/api/service/simpledb/
 
 ## 테스트 프로그램
 - 보안 정책 시뮬레이션 : https://policysim.aws.amazon.com/home/index.jsp
 - sdbNavigator Chrome Extension : https://chrome.google.com/webstore/detail/sdbnavigator/ddhigekdfabonefhiildaiccafacphgg
+- DB제약사항 : https://docs.aws.amazon.com/ko_kr/AmazonSimpleDB/latest/DeveloperGuide/SDBLimits.html
