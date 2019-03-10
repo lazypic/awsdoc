@@ -14,9 +14,14 @@ $ aws dynamodb scan --table-name client
 ```
 
 ## 특정 아이템 가지고오기
-
+키를 이용하는 방법1
 ```bash
 $ aws dynamodb get-item --table-name client --key '{"name":{"S":"75mm-studio"}}'
+```
+
+키를 이용하는 방법2
+```bash
+$ aws dynamodb get-item --table-name cashflow --key '{"id":{"N":"1"}}'
 ```
 
 ## 쿼리
