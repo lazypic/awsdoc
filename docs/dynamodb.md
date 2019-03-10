@@ -69,3 +69,4 @@ $ aws dynamodb scan --table-name cashflow --select "COUNT"
 
 ## Reference
 - http://www.daleseo.com/aws-cli-dynamodb/
+- Go SDK : https://docs.aws.amazon.com/ko_kr/sdk-for-go/v1/developer-guide/using-dynamodb-with-go-sdk.html
