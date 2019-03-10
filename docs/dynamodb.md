@@ -48,6 +48,14 @@ $ aws dynamodb query --table-name cashflow --key-condition-expression 'id = :id'
 $ aws dynamodb scan --table-name cashflow --filter-expression "income = :t" --expression-attribute-values '{":t":{"BOOL":true}}'
 ```
 
+## 데이터 추가
+
+```bash
+$ aws dynamodb put-item --table-name cashflow --item '{"sender":{"S":"woong"},"writedate":{"S":"2018-08-01T13:00:00+09:00"},"cost":{"N":"10000"},"income":{"BOOL":true},"typ":{"S":"angel"},"monetaryunit":{"S":"₩"},"id":{"N":"16"},"tags":{"L":[{"S": "donation"}]}}' --condition-expression "attribute_not_exists(id)"
+```
+
+`--condition-expression "attribute_not_exists(id)"`가 없다면 id를 이용해서 해당 데이터를 덮어쓰기 하게 됩니다.
+
 
 
 ## Reference
