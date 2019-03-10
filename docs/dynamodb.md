@@ -61,5 +61,11 @@ $ aws dynamodb put-item --table-name cashflow --item '{"sender":{"S":"woong"},"w
 $ aws dynamodb delete-item --table-name cashflow --key '{"id":{"N":"16"}}'
 ```
 
+## 데이터 갯수 알아내기
+
+```bash
+$ aws dynamodb scan --table-name cashflow --select "COUNT"
+```
+
 ## Reference
 - http://www.daleseo.com/aws-cli-dynamodb/
