@@ -56,7 +56,10 @@ $ aws dynamodb put-item --table-name cashflow --item '{"sender":{"S":"woong"},"w
 
 `--condition-expression "attribute_not_exists(id)"`가 없다면 id를 이용해서 해당 데이터를 덮어쓰기 하게 됩니다.
 
-
+## 데이터 삭제
+```
+$ aws dynamodb delete-item --table-name cashflow --key '{"id":{"N":"16"}}'
+```
 
 ## Reference
 - http://www.daleseo.com/aws-cli-dynamodb/
