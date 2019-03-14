@@ -26,10 +26,15 @@ $ aws glacier list-jobs --account-id - --vault-name test_project
 ```
 
 ## Vault 내부 데이터 확인
-볼트 내부 데이터를 확인하는 방법입니다.
+볼트 내부 데이터를 확인하기 위해서 먼저 확인겠다고 하는 job을 생성합니다.
 
 ```
 $ aws glacier initiate-job --account-id - --vault-name test_project --job-parameters '{"Type": "inventory-retrieval"}'
+```
+
+진행중인 Jobs는 아래 명령어를 이용해서 확인 가능합니다.
+```
+$ aws glacier list-jobs --account-id - --vault-name test_project
 ```
 
 ## Vault 리스트 확인하기
@@ -50,9 +55,10 @@ StatusCode에 "InProgress" -> Completed가 뜨면 json 파일로 저장합니다
 $ aws glacier get-job-output --account-id - --vault-name test_project --job-id n7XzcNhdl0QMBK3G-Y3F8pLst9oqIlwafsdfsdfsdfsdfGhSL2CpNL2_3yYlgu1Cc-riLJIHVFkRLpnx0WTakjflndsflnaMpgDj0kw output.json
 ```
 
-json파일을 확인하고 archive-id 를 알아내고 삭제를 진행합니다.
+output.json파일을 보면 과거에 올렸던 Archive 갯수만큼 Archive 리스트가 저장되어 있습니다. archive-id 를 알아내고 삭제를 진행합니다.
+
 ```
-$ aws glacier delete-archive --account-id - --vault-name test_project --archive-id "n7XzcNhdl0QMBK3G-Y3F8pLst9oqIlwafsdfsdfsdfsdfGhSL2CpNL2_3yYlgu1Cc-riLJIHVFkRLpnx0WTakjflndsflnaMpgDj0kw"
+$ aws glacier delete-archive --account-id - --vault-name test_project --archive-id n7XzcNhdl0QMBK3G-Y3F8pLst9oqIlwafsdfsdfsdfsdfGhSL2CpNL2_3yYlgu1Cc-riLJIHVFkRLpnx0WTakjflndsflnaMpgDj0kw
 ```
 
 ## Vault 삭제
