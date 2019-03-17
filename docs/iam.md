@@ -7,10 +7,6 @@ json을 이용해서 정책을 설정하는 방법입니다.
 $ aws iam create-user --user-name test --profile lazypic
 ```
 
-## JSON정책 추가하기
-
-
-
 ## 정책검색
 ```
 $ aws iam list-policies --query 'Policies[?PolicyName==`AmazonS3FullAccess`].{ARN:Arn}' --output text --profile lazypic
