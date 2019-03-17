@@ -2,6 +2,26 @@
 json을 이용해서 정책을 설정하는 방법입니다.
 사용자를 먼저 생성후 각 사용자에 맞는 정책을 생성하고 물려서 사용합니다.
 
+## 사용자 생성
+```
+$ aws iam create-user --user-name test --profile lazypic
+```
+
+## 정책검색
+```
+$ aws iam list-policies --query 'Policies[?PolicyName==`AmazonS3FullAccess`].{ARN:Arn}' --output text --profile lazypic
+```
+
+## 사용자와 정책을 연결하는 방법
+```
+$ aws iam attach-user-policy --user-name username --policy-arn arn:aws:iam::aws:policy/AmazonS3FullAccess --profile lazypic
+```
+
+## 사용자의 정책 확인
+```
+$ aws iam list-attached-user-policies --user-name username --profile lazypic
+```
+
 ## S3
 로그인 사용자마다 다른 정책을 부여할 때 사용합니다.
 lazypic S3 버킷에 해당 사용자만 부여된 권한을 이용하는 방법입니다.
@@ -29,7 +49,7 @@ Statement에 `"Action": ["s3:ListAllMyBuckets"],"Resource": "arn:aws:s3:::*"` �
                 "s3:ListBucket",
                 "s3:GetBucketLocation"
             ],
-            "Resource": "arn:aws:s3:::lazypic"
+            "Resource": "arn:aws:s3:::bucketname"
         },
         {
             "Effect": "Allow",
@@ -40,7 +60,7 @@ Statement에 `"Action": ["s3:ListAllMyBuckets"],"Resource": "arn:aws:s3:::*"` �
                 "s3:PutObjectAcl",
                 "s3:DeleteObject"
             ],
-            "Resource": "arn:aws:s3:::lazypic/*"
+            "Resource": "arn:aws:s3:::bucketname/*"
         }
     ]
 }

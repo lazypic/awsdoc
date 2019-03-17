@@ -33,10 +33,18 @@ $ python3 get-pip.py
 $ pip3 install awscli
 ```
 
-## 권한
+## AWS 키설정
 각 명령어가 잘 작동하기 위해서는 AWS_ACCESS_KEY_ID와 AWS_SECRET_ACCESS_KEY가 필요합니다.
 
 admin@lazypic.org에 문의하세요.
+
+~/.aws/credentials 파일에 아래처럼 작성해주세요. 여러 AWS 계정을 사용중일 수 있으니 명확하게 lazypic 프로파일 이름을 지정해주세요.
+
+```
+[lazypic]
+aws_access_key_id = AAAAAAAAAAAAAAAAAAAA
+aws_secret_access_key = BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+```
 
 ## 테스트를 위한 참고사이트
 - 테스트 이메일생성 : https://10minutemail.com
