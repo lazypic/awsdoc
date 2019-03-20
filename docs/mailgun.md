@@ -11,19 +11,19 @@ AWS 서비스가 아니지만 다루는 이유는 추후 Route53 서비스 설�
 mailgun에서 DNS를 등록후 mailgun의 Add DNS Records For Sending 항목으로
 Route53값을 추가적으로 셋팅 합니다.
 
-#### TXT 셋팅1
-- Name : lazypic.org
+#### TXT등록
+- Name : 
 - Type : TXT
-- Value : v=spf1 include:mailgun.org ~all
+```
+TXT lazypic.org v=spf1 include:mailgun.org ~all
+TXT k1._domainkey.lazypic.org k=rsa;~~
 
-#### TXT 셋팅2
-- Name : k1._domainkey.lazypic.org
-- Type : TXT
-- Value : k=rsa;~~
+
+```
 
 #### MX Setting
-- Type : MX - Mail exchange
-- Value
+type : MX - Mail exchange
+value
 ```
 10 mxa.mailgun.org
 10 mxb.mailgun.org
@@ -36,6 +36,6 @@ Route53값을 추가적으로 셋팅 합니다.
 
 ## Wait For Your Domain To Verify
 mailgun에서 Get Started Sending 버튼을 클릭합니다.
-48시간 이후 State가 Unverified 에서 ""로 바뀌면 성공입니다.
+48시간 이후 State가 "Unverified" 에서 "Active" 로 바뀌면 성공입니다.
 
 ## 사용자등록
