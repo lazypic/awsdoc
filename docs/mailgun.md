@@ -22,8 +22,8 @@ TXT k1._domainkey.lazypic.org k=rsa;~~
 ```
 
 #### MX Setting
-type : MX - Mail exchange
-value
+- Type : MX - Mail exchange
+- Value
 ```
 10 mxa.mailgun.org
 10 mxb.mailgun.org
