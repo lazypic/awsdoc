@@ -11,16 +11,19 @@ AWS 서비스가 아니지만 다루는 이유는 추후 Route53 서비스 설�
 mailgun에서 DNS를 등록후 mailgun의 Add DNS Records For Sending 항목으로
 Route53값을 추가적으로 셋팅 합니다.
 
-```
-TXT lazypic.org v=spf1 include:mailgun.org ~all
-TXT k1._domainkey.lazypic.org k=rsa;~~
+#### TXT 셋팅1
+- Name : lazypic.org
+- Type : TXT
+- Value : v=spf1 include:mailgun.org ~all
 
-
-```
+#### TXT 셋팅2
+- Name : k1._domainkey.lazypic.org
+- Type : TXT
+- Value : k=rsa;~~
 
 #### MX Setting
-type : MX - Mail exchange
-value
+- Type : MX - Mail exchange
+- Value
 ```
 10 mxa.mailgun.org
 10 mxb.mailgun.org
