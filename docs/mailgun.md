@@ -17,8 +17,6 @@ Route53값을 추가적으로 셋팅 합니다.
 ```
 TXT lazypic.org v=spf1 include:mailgun.org ~all
 TXT k1._domainkey.lazypic.org k=rsa;~~
-
-
 ```
 
 #### MX Setting
