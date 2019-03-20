@@ -19,6 +19,7 @@ layzpic은 비용절감을 위해서 Serverless 솔루션을 권장합니다.
 - [DynamoDB](docs/dynamodb.md)
 - [DocumentDB](docs/documentdb.md)
 - [Glacier](docs/glacier.md)
+- [ec2](docs/ec2.md)
 
 ## Lang
 - [Node.js](docs/nodejs.md)
