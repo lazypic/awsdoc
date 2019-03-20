@@ -69,3 +69,10 @@ $ aws glacier delete-vault --account-id - --vault-name test_project
 
 ## S3 to Glacier
 개인적으로는 S3에 이전 정책을 작성하여 사용하는 것이 더 편리합니다.
+
+## AWS S3 Glacier 파일 복구하는 방법
+- 웹 콘솔에서 파일 > 오른쪽 버튼을 누르면 initiate Restore가 뜹니다.
+- 몇일간 데이터를 사용할지 날짜를 기입합니다.
+- 일반적으로 3~4시간이 지나면 받을 수 있습니다.
+- 복구가 완료되었는지 체크하기위해서는 파일의 Properties를 확인하면 됩니다.
+- Details 항목에 Restored until 기간이 뜨면 다운받을 수 있습니다.
