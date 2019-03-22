@@ -37,3 +37,14 @@ mailgun에서 Get Started Sending 버튼을 클릭합니다.
 48시간 이후 State가 "Unverified" 에서 "Active" 로 바뀌면 성공입니다.
 
 ## 사용자등록
+- 메일등록을 합니다. : https://app.mailgun.com/app/domains/lazypic.org/credentials
+
+## Routes 셋팅
+- Expression Type : Match Recipient
+- Recipent : woong@lazypic.org
+- Actions(Forward Check) : khw7096@gmail.com
+- Priority : 0
+- Description : 김한웅
+
+## 사용자 등록절차
+- https://lazypic.github.io/메일포워딩-셋팅/ 을 참고합니다.
