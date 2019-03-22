@@ -36,7 +36,7 @@ TXT k1._domainkey.lazypic.org k=rsa;~~
 mailgun에서 Get Started Sending 버튼을 클릭합니다.
 48시간 이후 State가 "Unverified" 에서 "Active" 로 바뀌면 성공입니다.
 
-## 사용자등록
+## 사용자등록 / stmp credentials 메뉴로 이동합니다.
 - 메일등록을 합니다. : https://app.mailgun.com/app/domains/lazypic.org/credentials
 
 ## Routes 셋팅 / 메뉴에서 Route
