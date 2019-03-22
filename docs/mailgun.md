@@ -40,6 +40,8 @@ mailgun에서 Get Started Sending 버튼을 클릭합니다.
 - 메일등록을 합니다. : https://app.mailgun.com/app/domains/lazypic.org/credentials
 
 ## Routes 셋팅 / 메뉴에서 Route
+woong@lazypic.org 메일을 khw7096@gmail.com 으로 포워딩하느 설정입니다.
+
 - Expression Type : Match Recipient
 - Recipent : woong@lazypic.org
 - Actions(Forward Check) : khw7096@gmail.com(`,`문자를 이용해서 복수입력이 가능합니다.)
