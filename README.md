@@ -20,6 +20,7 @@ layzpic은 비용절감을 위해서 Serverless 솔루션을 권장합니다.
 - [DocumentDB](docs/documentdb.md)
 - [Glacier](docs/glacier.md)
 - [ec2](docs/ec2.md)
+- [Machine Learning](docs/ml.md)
 
 ## Mailgun
 - [mailgun](docs/mailgun.md)
