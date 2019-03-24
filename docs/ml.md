@@ -12,5 +12,9 @@ AWS 머신러닝 서비스를 간편하게 사용할 수 있습니다.
 - Text : 공백으로 구분된 단어로 취급하려는 문자열 속성
 
 이렇게 데이터를 축적해두면 추후 AWS Machine Learning에 적합한 데이터 Set이 될 수 있습니다.
+
+## 응용모델
+- 위 모델로 파이프라인툴을 구성하고 dataset을 가지고 있다면, 작업예상일을 자동유추할 수 있다.
+
 ## Reference
 - https://docs.aws.amazon.com/ko_kr/machine-learning/latest/dg/step-2-create-a-datasource.html
