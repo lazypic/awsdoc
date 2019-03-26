@@ -1,6 +1,6 @@
 # awsdoc
 
-lazypic에서 자주 사용하는 AWS 명령어 문서 모음집 입니다.
+lazypic에서 프로젝트를 진행하며 자주 사용하는 AWS 명령어 문서 모음집 입니다.
 layzpic은 비용절감을 위해서 Serverless 솔루션을 권장합니다.
 
 > 참고 : 아직 문서가 작성중이라서 설명이 매끄럽지 못합니다.
@@ -22,7 +22,10 @@ layzpic은 비용절감을 위해서 Serverless 솔루션을 권장합니다.
 - [ec2](docs/ec2.md)
 - [Machine Learning](docs/ml.md)
 
-## Mailgun
+## Function
+- [Project Backup](docs/projectbackup.md)
+
+## Mail
 - [mailgun](docs/mailgun.md)
 
 ## Lang
