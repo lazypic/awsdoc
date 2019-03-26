@@ -23,7 +23,8 @@ layzpic은 비용절감을 위해서 Serverless 솔루션을 권장합니다.
 - [Machine Learning](docs/ml.md)
 
 ## Function
-- [Project Backup](docs/projectbackup.md)
+- [Create Project](docs/createproject.md)
+- [Backup Project](docs/backupproject.md)
 
 ## Mail
 - [mailgun](docs/mailgun.md)
