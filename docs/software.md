@@ -12,12 +12,12 @@ lazypic은 macOS, CentOS만 지원합니다.
 
 ## 소프트웨어 목록
 
-버전을 정확하게 맞추어야 하는 프로그램만 올립니다.
+버전을 정확하게 맞추어야 하는 프로그램만 업로드합니다.
 
 - s3://app.lazypic.org/uname/blender
 - s3://app.lazypic.org/uname/blenderdev
 
-아직 버전을 정확하게 맞추지 않아도 협업할 수 있는 프로그램
+아직 버전을 정확하게 맞추지 않아도 바로 협업할 수 있는 프로그램
 
 - s3://app.lazypic.org/uname/krita
 - s3://app.lazypic.org/uname/ardour
@@ -29,3 +29,73 @@ lazypic은 macOS, CentOS만 지원합니다.
 ## 로컬 설치위치
 
 ~/app
+
+## Security policy
+
+s3AppUser
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:ListAllMyBuckets"
+            ],
+            "Resource": "arn:aws:s3:::*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:ListBucket",
+                "s3:GetBucketLocation"
+            ],
+            "Resource": "arn:aws:s3:::app.lazypic.org"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject",
+                "s3:GetObjectAcl"
+            ],
+            "Resource": "arn:aws:s3:::app.lazypic.org/*"
+        }
+    ]
+}
+```
+
+s3AppAdmin
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:ListAllMyBuckets"
+            ],
+            "Resource": "arn:aws:s3:::*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:ListBucket",
+                "s3:GetBucketLocation"
+            ],
+            "Resource": "arn:aws:s3:::app.lazypic.org"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject",
+                "s3:GetObjectAcl",
+                "s3:PutObject",
+                "s3:PutObjectAcl",
+                "s3:DeleteObject"
+            ],
+            "Resource": "arn:aws:s3:::app.lazypic.org/*"
+        }
+    ]
+}
+```
