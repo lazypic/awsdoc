@@ -5,7 +5,7 @@
 ## 백업하기
 sewol 프로젝트를 백업하기.
 
-```
+```bash
 aws s3 cp s3://project-sewol/ s3://lazypic-glacier/sewol/ --recursive --profile lazypic
 ```
 
