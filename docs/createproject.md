@@ -9,5 +9,5 @@
 	- 사용자 계정의 보안만 관리하면 된다.
 - 프로젝트 코드 : https://github.com/lazypic/projectname
 - 슬랙채널 : #projectname
-- 메일알리아스 / projectname@lazypic.org
+- 메일알리아스 : projectname@lazypic.org
 - projectname으로 SNS Topic 생성
