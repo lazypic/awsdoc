@@ -7,7 +7,6 @@
 	- 리눅스를 기본적으로 설치하면 HOME 디렉토리 용량을 가장 많이 잡습니다.
 	- 각 사용자별로 관리할 수 있다.
 	- 사용자 계정의 ~/.aws/credential 파일을 설정하면 됩니다.
-- 프로젝트 코드 : https://github.com/lazypic/projectname
-- 슬랙채널 : #projectname
-- 메일알리아스 : projectname@lazypic.org
-- projectname으로 SNS Topic 생성
+- Github : https://github.com/lazypic/projectname
+- Slack : #projectname
+- Amazon SNS : projectname
