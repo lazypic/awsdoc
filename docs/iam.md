@@ -86,7 +86,7 @@ $ aws iam create-virtual-mfa-device --virtual-mfa-device-name clientnameMFADevic
 Google Authenticator 로 생성되는 코드 2개를 연달아서 입력해야합니다. 210987654321 값 대신 AccountID를 입력합니다.
 
 ```bash
-$ aws iam enable-mfa-device --user-name clientname --serial-number arn:aws:iam::210987654321:mfa/clientnameMFADevice --authentication-code-1 123456 --authentication-code-2 789012 --profile lazypic
+$ aws iam enable-mfa-device --user-name woong@lazypic.org --serial-number arn:aws:iam::210987654321:mfa/clientnameMFADevice --authentication-code-1 123456 --authentication-code-2 789012 --profile lazypic
 ```
 
 
