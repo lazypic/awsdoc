@@ -79,7 +79,7 @@ policy 파일내용
 MFA를 위해서 디바이스등록, QR코드를 생성합니다.
 
 ```bash
-$ aws iam create-virtual-mfa-device --virtual-mfa-device-name clientnameMFADevice --outfile ./QRCode.png --bootstrap-method QRCodePNG --profile lazypic
+$ aws iam create-virtual-mfa-device --virtual-mfa-device-name clientnameMFADevice --outfile /tmp/qrcode/woong@lazypic.org --bootstrap-method QRCodePNG --profile lazypic
 ```
 
 사용자와 연결하기
