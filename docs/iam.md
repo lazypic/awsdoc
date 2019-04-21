@@ -4,8 +4,11 @@ json을 이용해서 정책을 설정하는 방법입니다.
 
 ## 사용자 생성
 ```
-$ aws iam create-user --user-name test --profile lazypic
+$ aws iam create-user --user-name woong@lazypic.org --profile lazypic
 ```
+
+- 초기비밀번호 : `Nice2meetyou!`
+- 로그인 이후 사용자의 새 비밀번호 생성을 요청합니다.
 
 ## 정책검색
 ```
