@@ -1,6 +1,7 @@
 # SNS
 lazypic에 이메일로 알람을 설정하는 방법.
 보통 프로젝트가 시작되면 project 이름으로 topic을 만듭니다.
+`000000000000` 문자 대신 자신의 Account ID를 사용해주세요.
 
 ## 토픽 생성하기.
 lazypic에 `circle` 프로젝트로 topic을 생성합니다.
