@@ -9,8 +9,8 @@ lazypic AWS 인프라를 운용하면서 작성되는 메뉴얼입니다.
 
 ## Service
 - [S3](docs/s3.md)
-- [Ses](docs/ses.md)
-- [Sns](docs/sns.md)
+- [SES - Simple Email Service](docs/ses.md)
+- [SNS - Simple Notification Service](docs/sns.md)
 - [IAM](docs/iam.md)
 - [Certificate Manager](docs/acm.md)
 - [CloudFront](docs/cloudfront.md)
