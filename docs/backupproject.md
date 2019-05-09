@@ -1,9 +1,9 @@
 # Project Backup
 
 ## S3백업
-1. projectname.lazypic.org 버킷을 정리합니다.
-1. S3에서 진행된 프로젝트는 glacier.lazypic.org(S3 Glacier)로 이동합니다.
+1. project-circle 버킷을 정리합니다.
+1. S3에서 진행된 프로젝트는 lazypic-glacier 버킷으로 이동합니다.
 
 ```
-$ aws s3 mv s3://projectname.lazypic.org/ s3://glacier.lazypic.org/projectname/ --recursive --profile lazypic
+$ aws s3 cp s3://project-circle/ s3://lazypic-glacier/circle/ --recursive --profile lazypic
 ```

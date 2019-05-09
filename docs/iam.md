@@ -4,8 +4,11 @@ json을 이용해서 정책을 설정하는 방법입니다.
 
 ## 사용자 생성
 ```
-$ aws iam create-user --user-name test --profile lazypic
+$ aws iam create-user --user-name woong@lazypic.org --profile lazypic
 ```
+
+- 초기비밀번호 : `Nice2meetyou!`
+- 로그인 이후 사용자의 새 비밀번호 생성을 요청합니다.
 
 ## 정책검색
 ```
@@ -76,14 +79,14 @@ policy 파일내용
 MFA를 위해서 디바이스등록, QR코드를 생성합니다.
 
 ```bash
-$ aws iam create-virtual-mfa-device --virtual-mfa-device-name clientnameMFADevice --outfile ./QRCode.png --bootstrap-method QRCodePNG --profile lazypic
+$ aws iam create-virtual-mfa-device --virtual-mfa-device-name clientnameMFADevice --outfile /tmp/qrcode/woong@lazypic.org --bootstrap-method QRCodePNG --profile lazypic
 ```
 
 사용자와 연결하기
 Google Authenticator 로 생성되는 코드 2개를 연달아서 입력해야합니다. 210987654321 값 대신 AccountID를 입력합니다.
 
 ```bash
-$ aws iam enable-mfa-device --user-name clientname --serial-number arn:aws:iam::210987654321:mfa/clientnameMFADevice --authentication-code-1 123456 --authentication-code-2 789012 --profile lazypic
+$ aws iam enable-mfa-device --user-name woong@lazypic.org --serial-number arn:aws:iam::210987654321:mfa/clientnameMFADevice --authentication-code-1 123456 --authentication-code-2 789012 --profile lazypic
 ```
 
 

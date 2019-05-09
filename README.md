@@ -1,9 +1,11 @@
 # awsdoc
+lazypic AWS 인프라를 운용하면서 작성되는 메뉴얼입니다.
 
-lazypic에서 프로젝트를 진행하며 자주 사용하는 AWS 명령어 문서 모음집 입니다.
-layzpic은 비용절감을 위해서 Serverless 솔루션을 권장합니다.
+- lazypic에서 프로젝트를 진행하며 자주 사용하는 AWS 명령어에 대해서도 설명되어 있습니다.
+- lazypic은 유저별, 프로젝트별, ARN(리소스별)로 권한관리를 진행합니다.
+- layzpic은 비용절감을 위해서 솔루션 제작시 Serverless 솔루션을 권장합니다.
 
-> 참고 : 아직 문서가 작성중이라서 설명이 매끄럽지 못합니다.
+> 이 문서는 프로젝트를 진행하면서 지속적으로 수정중입니다. 부분부분 설명이 매끄럽지 못할 수 있습니다.
 
 ## Service
 - [S3](docs/s3.md)
@@ -26,7 +28,7 @@ layzpic은 비용절감을 위해서 Serverless 솔루션을 권장합니다.
 ## Function
 - [Create Project](docs/createproject.md)
 - [Backup Project](docs/backupproject.md)
-- [Software](docs/software.md)
+- [Software](docs/software.md) : s3://lazypic-app 정책
 
 ## Mail
 - [mailgun](docs/mailgun.md)

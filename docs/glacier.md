@@ -1,5 +1,27 @@
 # Glacier
+
 백업을 위해서 사용합니다. circle 프로젝트를 예로들어서 설명합니다.
+
+## 백업하기
+sewol 프로젝트를 백업하기.
+
+```bash
+aws s3 cp s3://project-sewol/ s3://lazypic-glacier/sewol/ --recursive --profile lazypic
+```
+
+# Glacier Deep Archive
+아래 명령어를 이용해서 glacier deep archive 형태로 데이터를 백업할 수 있습니다.
+
+```bash
+$ aws s3 cp filename.mov s3://glacier.lazypic.org/filename.mov --storage-class DEEP_ARCHIVE
+```
+
+아래 명령어를 이용해서 파일을 deep archive 할 수 있습니다.
+```bash
+$ aws s3 cp s3://bucket/filename s3://bucket/filename --storage-class DEEP_ARCHIVE
+```
+
+# Glacier
 
 ## Vault 생성
 test_project 이름으로 vault 이름을 생성합니다.
