@@ -7,6 +7,7 @@ layzpic은 비용절감을 위해서 Serverless 솔루션을 권장합니다.
 
 ## Service
 - [S3](docs/s3.md)
+- [Ses](docs/ses.md)
 - [Sns](docs/sns.md)
 - [IAM](docs/iam.md)
 - [Certificate Manager](docs/acm.md)
