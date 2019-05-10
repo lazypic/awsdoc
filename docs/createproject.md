@@ -21,6 +21,5 @@ circle.sh
 #!/bin/sh
 FILENAME=$0
 PROJECT="${FILENAME%.*}"
-aws s3 sync ~/project/$PROJECT s3://project-$PROJECT --profile lazypic
 aws s3 sync s3://project-$PROJECT ~/project/$PROJECT --profile lazypic
 ```
