@@ -32,8 +32,13 @@ def handler_name(event, context):
 리서치
 
 ## SNS 전송
-람다 함수는 아래와 같다. 이 함수가 작동되기 위해서는 gatewayAPI, Lambda, SNS 모두 권한이 존재해야 한다.
+아래 람다 함수가 작동되기 위해서는 람다 실행함수 권한에 추가로 필요한 권한을 적용해야 합니다.
+저는 람다함수에 SNS를 물리는 작업을 진행하고 있기 때문에 아래 권한을 설정했습니다.
 
+- AWSLambdaSNSPublishPolicyExecutionRole
+- AWSLambdaBasicExecutionRole
+
+실행코드
 ```javascript
 var ACCOUNTID = "000000000000"
 var AWS = require("aws-sdk");
