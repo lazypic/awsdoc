@@ -10,3 +10,14 @@
 - Github : https://github.com/lazypic/projectname
 - Slack : #projectname
 - Amazon SNS : projectname
+
+## 프로젝트 Sync 하기
+~/project/name 경로에 sync.sh 파일을 생성합니다. 파일내용은 아래와 같습니다.
+
+현재 하위경로를 업로드하고, 새로 업데이트된 파일을 다운로드 하게 됩니다.
+
+```sh
+#!/bin/sh
+aws s3 sync ~/project/circle s3://project-circle --profile lazypic
+aws s3 sync s3://project-circle ~/project/circle --profile lazypic
+```
