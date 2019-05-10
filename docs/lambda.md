@@ -60,8 +60,9 @@ exports.handler = function(event, context) {
 ```
 
 터미널에서 실행해보기.
-```
-$ curl -d '{"key1":"value1", "key2":"value2"}' -H "Conion/json" -X POST https://lpn8sb0mc9.execute-api.ap-northeast-2.amazonaws.com/estimate
+
+```bash
+$ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://lpn8sb0mc9.execute-api.ap-northeast-2.amazonaws.com/estimate
 ```
 
 ## Reference
