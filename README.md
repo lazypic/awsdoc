@@ -61,6 +61,9 @@ aws_access_key_id = AAAAAAAAAAAAAAAAAAAA
 aws_secret_access_key = BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 ```
 
+## 문서화
+- AWS 다이어그램을 만들 때 https://draw.io 를 사용하면 편리하다.
+
 ## 테스트를 위한 참고사이트
 - 테스트 이메일생성 : https://10minutemail.com
 - 보안 정책 시뮬레이션 : https://policysim.aws.amazon.com/home/index.jsp
