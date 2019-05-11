@@ -39,6 +39,8 @@ lazypic AWS 인프라를 운용하면서 작성되는 메뉴얼입니다.
 ## Install
 awscli를 설치해야 합니다.
 
+[Python3 설치](https://www.python.org/downloads)
+
 ```bash
 $ cd /tmp
 $ curl -O https://bootstrap.pypa.io/get-pip.py
