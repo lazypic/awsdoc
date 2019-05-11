@@ -2,6 +2,13 @@
 json을 이용해서 정책을 설정하는 방법입니다.
 사용자를 먼저 생성후 각 사용자에 맞는 정책을 생성하고 물려서 사용합니다.
 
+## Account 계정번호를 알아내는 방법
+터미널에서 다음처럼 타이핑 합니다.
+
+```bash
+$ aws sts get-caller-identity --output text --query 'Account' --profile lazypic
+```
+
 ## 사용자 생성
 ```
 $ aws iam create-user --user-name woong@lazypic.org --profile lazypic
