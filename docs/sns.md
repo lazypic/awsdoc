@@ -34,3 +34,37 @@ $ aws sns publish --topic-arn arn:aws:sns:ap-northeast-2:000000000000:circle --m
 - circle 프로젝트를 예로 들어 설명했지만 자유롭게 topic을 생성할 수 있습니다.
 - 팀명으로 topic을 만들 수 있습니다.
 - 동호회명으로 topic을 만들 수 있습니다.
+
+## 람다를 사용하는 Publish
+
+기본 SNS FullAccess 권한은 아래와 같습니다.
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "sns:*"
+            ],
+            "Effect": "Allow",
+            "Resource": "*"
+        }
+    ]
+}
+```
+
+보안을 위해서 접근권한을 Publish와 리전,accountid,topic까지 제한합니다.
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "sns:Publish"
+            ],
+            "Resource": "arn:aws:sns:ap-northeast-2:000000000000:topicname"
+        }
+    ]
+}
+```
