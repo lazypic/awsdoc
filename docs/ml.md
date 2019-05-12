@@ -16,5 +16,8 @@ AWS 머신러닝 서비스를 간편하게 사용할 수 있습니다.
 ## 응용모델
 - 위 모델로 파이프라인툴을 구성하고 dataset을 가지고 있다면, 작업예상일을 자동유추할 수 있다.
 
+## 데이터를 판매하는 사이트
+- https://www.datastore.or.kr
+
 ## Reference
 - https://docs.aws.amazon.com/ko_kr/machine-learning/latest/dg/step-2-create-a-datasource.html
