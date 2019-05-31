@@ -51,3 +51,6 @@ woong@lazypic.org 메일을 khw7096@gmail.com 으로 포워딩하는 설정입�
 
 ## 사용자 등록절차
 - https://lazypic.github.io/메일포워딩-셋팅/ 을 참고합니다.
+
+## 주의사항
+- 메일건으로 셋팅한 메일을 AWS SNS 서비스에 물리지 않습니다. 너무 많은 메일이 자동으로 전송되면 mailgun 측에서 고객의 스팸공격 방지를 위해서 DNS를 임시로 막습니다.
