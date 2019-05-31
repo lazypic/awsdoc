@@ -52,5 +52,39 @@ woong@lazypic.org 메일을 khw7096@gmail.com 으로 포워딩하는 설정입�
 ## 사용자 등록절차
 - https://lazypic.github.io/메일포워딩-셋팅/ 을 참고합니다.
 
-## 주의사항
-- 메일건으로 셋팅한 메일을 AWS SNS 서비스에 물리지 않습니다. 너무 많은 메일이 자동으로 전송되면 mailgun 측에서 고객의 스팸공격 방지를 위해서 DNS를 임시로 막습니다.
+## 주의사항1. mailgun DNS disabled
+메일건으로 셋팅한 메일을 AWS SNS 서비스에 물리지 않습니다. 너무 많은 메일이 자동으로 전송되면 mailgun 측에서 고객의 스팸공격 방지를 위해서 DNS를 임시로 막습니다.
+
+메일원문
+```
+In order to complete this process please answer the questions below (in as much detail as possible) Please be sure to provide us with links to your webpage, privacy policy, terms of service and sign up page:
+
+1. What types of emails will you be sending - transactional or marketing? Please tell us briefly about how your business uses email.
+
+서비스 URL을 작성하기.
+
+
+2. Where do you source your database/list of email addresses? Please provide any available links.
+
+Email lists are managed through AWS SNS.
+
+3. Are all of your email addresses double-opt in? (This means that the user has requested your emails through sign-up and then confirmed via email that they want to receive your communication).
+
+Yes.
+
+4. What is your expected monthly volume of messages?
+
+May 2019 is in the development phase, so many tests have been conducted. We expect 1000 cases a month.
+
+5. Have you read our Email Best Practices document?
+
+ Yes.
+
+6. Please provide a link to your Privacy Policy, Terms of Service, and Sign-up link (if applicable).
+
+Send Term and Privacy policy(Korean)
+
+7. Please provide a sample email you would typically send to your users.
+
+생성되는 패턴메일을 보내기.
+```
