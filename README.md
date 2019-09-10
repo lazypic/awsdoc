@@ -27,6 +27,7 @@ lazypic AWS 인프라를 운용하면서 작성되는 메뉴얼입니다.
 
 ## Function
 - [Create Project](docs/createproject.md)
+- [Sync Project](docs/syncprojet.md)
 - [Backup Project](docs/backupproject.md)
 - [Software](docs/software.md) : s3://lazypic-app 정책
 
