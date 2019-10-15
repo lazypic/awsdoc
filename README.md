@@ -69,5 +69,6 @@ aws_secret_access_key = BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 - 테스트 이메일생성 : https://10minutemail.com
 - 보안 정책 시뮬레이션 : https://policysim.aws.amazon.com/home/index.jsp
 
-## 요금관련 계산기
+## 요금관련 정보
 - 가격 계산기 : https://calculator.s3.amazonaws.com/index.html
+- Azure 윈도우10 한달간 이미지 저장가격: 월 13,638원 / '19.10.15기준
