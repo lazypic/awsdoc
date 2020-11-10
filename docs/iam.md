@@ -55,15 +55,7 @@ policy 파일내용
         {
             "Effect": "Allow",
             "Action": [
-                "s3:ListAllMyBuckets"
-            ],
-            "Resource": "arn:aws:s3:::*"
-        },
-        {
-            "Effect": "Allow",
-            "Action": [
-                "s3:ListBucket",
-                "s3:GetBucketLocation"
+                "s3:ListBucket"
             ],
             "Resource": "arn:aws:s3:::bucketname"
         },
@@ -81,6 +73,8 @@ policy 파일내용
     ]
 }
 ```
+
+위처럼 정책이 설정되었다면 항상 https://s3.console.aws.amazon.com/s3/buckets/bucketname/ 으로 접근해야 한다.
 
 ## MFA 생성
 MFA를 위해서 디바이스등록, QR코드를 생성합니다.
