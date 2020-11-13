@@ -55,7 +55,8 @@ policy 파일내용
         {
             "Effect": "Allow",
             "Action": [
-                "s3:ListBucket"
+                "s3:ListBucket",
+                "s3:ListBucketVersions"
             ],
             "Resource": "arn:aws:s3:::bucketname"
         },
